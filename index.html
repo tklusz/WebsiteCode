@@ -3,29 +3,205 @@
   <head>
 
     <meta charset="utf-8">
+
     <title>Tyler Kluszczynski</title>
+
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/small-screens.css">
+    <link rel="stylesheet" href="css/large-screens.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 
   </head>
   <body>
-    <div class="section">
+    <div class="main-section">
+      <div class="top-bar">
 
-      <nav id="navbar">
+        <nav id = "navbar">
           <a class="navitem" href="#">About</a>
           <a class="navitem" href="#">Experience</a>
-          <a class="navitem" href="#">Education</a>
+          <a class="navitem" href="#">Skills</a>
           <a class="navitem" href="#">Contact</a>
-      </nav>
+        </nav>
 
-      <img id ="me" src="static/me.jpg"></img>
+        <img id ="me" src="static/me.jpg"></img>
 
-      <h3> I'm </h3>
+      </div>
+
+      <h5> I'm </h5>
       <div id="name">
         <h1>Tyler</h1>
         <h1 id="lastname">Kluszczynski</h1>
       </div>
       <p>A graduating senior and incoming devops engineer from Santa&nbspClarita, California.</p>
+
+      <hr></hr>
+
+      <div>
+        <h2> About Me </h2>
+
+        <div>
+          <h3 class="section-subtitle">
+            <i class="fas fa-graduation-cap"></i>
+            B.S. in CIT @ CSUN with&nbspHonors
+          </h3>
+
+          <p class = "section-description"><span class="bold">3.72</span> GPA.</p>
+          <p class = "section-description"><span class="bold">3.93</span> Upper Division GPA.</p>
+          <p class = "section-description">Minor in Religious Studies.</p>
+
+          <p class = "section-description"> Obtaining: <span class="bold">May 2019.</span> </p>
+        </div>
+
+        <div>
+          <h3 class="section-subtitle">
+            <i class="fas fa-cloud"></i>
+            DevOps
+          </h3>
+
+          <p class = "section-description">
+            AWS, Docker, Terraform, Ansible.
+          </p>
+
+          <p class = "section-description">
+            Monitoring and metrics with Datadog.
+          </p>
+
+          <p class = "section-description">
+            CI-CD pipelines with GitLab CI and CircleCI.
+          </p>
+
+          <p class = "section-description">
+            Python and Bash scripting.
+          </p>
+
+          <p class = "section-description">
+            MySQL and SQLite.
+          </p>
+
+          <a href="#" class="cta">
+            View my DevOps skills
+          </a>
+        </div>
+
+      </div>
+
+      <hr></hr>
+
+      <div>
+        <h2>Experience</h2>
+
+        <h3 class = "section-subtitle">DevOps Capstone Project</h3>
+
+        <div class="exp-grid">
+
+          <div class = "exp-grid-description">
+            Developing AWS architecure in an agile enviornment,
+            working alongside a client and peers. Built and
+            documented Terraform modules. Built a
+            CI - CD pipeline with GitLab CI to deploy Docker
+            images to AWS ECR. Set up Datadog monitoring with
+            an ECS task definition running in daemon mode. Created RDS
+            instances and connected them to an ECS Wordpress container using
+            Terraform.
+          </div>
+
+          <div class = "exp-grid-icon closed-source">
+              <i class="fab closed-source-icon individual-icon fa-gitlab fa-2x"></i>
+              <span class = "closed-tooltip">This project is closed source.</span>
+          </div>
+
+        </div>
+
+        <hr class="exp-hr"></hr>
+
+        <h3 class = "section-subtitle">Web Development and Design</h3>
+
+        <div class = "exp-grid">
+
+          <div class = "exp-grid-description">
+            Designing this website using Adobe XD.
+            Developing it with HTML, CSS and Font-Awesome for icons.
+            The website is hosted on GitLab pages, and is using Cloudflare DNS
+            with a TLS origin certificate. The domain was purchased from
+            NameCheap.
+          </div>
+
+          <div class = "exp-grid-icon">
+            <a href="https://github.com/tklusz/WebsiteCode">
+              <i class="fab individual-icon fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+
+        <hr class = "exp-hr"></hr>
+
+        <h3 class = "section-subtitle">DevOps Projects</h3>
+
+        <div class = "exp-grid">
+
+          <div class = "exp-grid-description">
+            Worked with a group of peers to develop AWS infrastructure.
+            Automated static website delivery from GitHub to an S3 bucket
+            using CircleCI, then deployed to Cloudfront CDN. Obtained TLS
+            certificates using Let's Encrypt and AWS Certificate Manager.
+            Used Ansible to configure EC2 instances.
+          </div>
+
+          <div class = "exp-grid-icon">
+            <a href="https://github.com/CSUN-SeniorDesign/eat-infrastructure">
+              <i class="fab individual-icon fa-github fa-2x"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <hr class = "exp-hr"></hr>
+
+        <h3 class = "section-subtitle">DevOps + Linux SysAdmin Assignments</h3>
+
+        <div class = "exp-grid">
+          <div class = "exp-grid-description">
+            Completing various DevOps assignments as part of my capstone class.
+            Created a LAMP stack image using a Dockerfile. Used Ansible to configure a
+            LAMP stack. Each project has a write-up for further explanation.
+          </div>
+          <div class = "exp-grid-icon">
+            <a href="https://github.com/tklusz/CapstoneAssignments">
+              <i class="fab individual-icon fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+
+        <hr class = "exp-hr"></hr>
+
+        <h3 class = "section-subtitle">View all my experience:</h3>
+
+        <!--
+
+        Code to add additional experience sections.
+
+        <hr class = "exp-hr"></hr>
+
+        <h3 class = "section-subtitle">Section-Title</h3>
+
+        <div class = "exp-grid">
+          <div class = "exp-grid-description">
+            Text
+          </div>
+          <div class = "exp-grid-icon">
+            <a href="">
+              <i></i>
+            </a>
+          </div>
+        </div>
+
+      -->
+
+
+      </div>
+
 
       <div id="icon-set">
         <a href="#"><i class="fab social-icon fa-github fa-2x"></i></a>
@@ -34,11 +210,13 @@
         <a href="#"><i class="fas social-icon fa-envelope fa-2x"></i></a>
       </div>
 
-      <a href="#" id="cta">
+      <a href="#" class="cta">
         <i class="fas fa-download"></i> My Resume
       </a>
 
-    </div>
 
+
+    </div>
+    
   </body>
 </html>

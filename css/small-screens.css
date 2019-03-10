@@ -1,0 +1,15 @@
+/*
+  Decreasing download button size for very small screens.
+  Also decreasing font size for very small screens.
+*/
+@media only screen and (max-width: 350px) {
+
+  #cta{
+    width: 200px;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+}
