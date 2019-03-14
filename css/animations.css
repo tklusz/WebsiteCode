@@ -1,0 +1,29 @@
+@keyframes slide-up{
+  0%{
+      transform: rotate(0) translateY(20%);
+      }
+  30%{
+      transform: rotate(0) translateY(0);
+      }
+}
+
+@keyframes highlight-item{
+  50%{
+      background: #ffcc80;
+      }
+  100%{
+      background: white;
+      }
+}
+
+
+
+.main-section{
+    animation: slide-up 1.5s ease-out;
+
+}
+
+#name{
+  animation: highlight-item 1.2s;
+  animation-delay: .5s;
+}
