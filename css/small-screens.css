@@ -8,8 +8,8 @@
     width: 200px;
   }
 
-  p {
-    font-size: 1.1em;
+  p, .sub-paragraph {
+    font-size: .9em;
   }
 
 }
