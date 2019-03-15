@@ -1,29 +1,33 @@
 @keyframes slide-up{
+
   0%{
       transform: rotate(0) translateY(20%);
-      }
-  30%{
-      transform: rotate(0) translateY(0);
-      }
-}
+  }
 
-@keyframes highlight-item{
-  50%{
-      background: #ffcc80;
-      }
   100%{
-      background: white;
-      }
+      transform: rotate(0) translateY(0);
+  }
+}
+
+@keyframes grow-and-shrink{
+  0%{
+      transform: scale(1, 1);
+  }
+
+  50%{
+      transform: scale(1.15, 1.15);
+  }
+
+  100%{
+    transform: scale(1, 1);
+  }
 }
 
 
-
-.main-section{
-    animation: slide-up 1.5s ease-out;
-
+.whole-contents{
+    animation: slide-up .5s ease-out;
 }
 
-#name{
-  animation: highlight-item 1.2s;
-  animation-delay: .5s;
+#me:hover{
+  animation: grow-and-shrink .5s;
 }

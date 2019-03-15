@@ -6,18 +6,9 @@
     min-height: 450px;
   }
 
-  .desktop-only{
-    display: block;
-  }
-
-  #me{
-    height: 12em;
-    width: 12em;
-    margin: 5em auto ;
-  }
-
-  .midline-cta{
-    display: none;
+  h1 {
+    margin: 0 auto;
+    font-size: 3em;
   }
 
   h2{
@@ -29,14 +20,41 @@
     padding: 2.5em 0 .35em 0;
   }
 
+  h5{
+    font-size: 1em;
+  }
+
+  hr{
+    margin: 3em auto 3em auto;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .whole-contents{
+    box-shadow: 0 0 15px black;
+    border-radius: .3em;
+    margin: 1.1em;
+  }
+
+  .desktop-only{
+    display: block;
+  }
+
+  .midline-cta{
+    display: none;
+  }
+
   .closed-tooltip{
-    right: -150%;
+    right: -180%;
   }
 
   .double-button{
     display:inline-block;
-    padding: .5em 0 .5em 0;
     margin-top: 3em;
+    margin-left: .5em;
+    font-weight: normal;
   }
 
   .contact-text{
@@ -51,29 +69,21 @@
     margin-bottom: .2em;
   }
 
-  #icon-set{
-      margin-bottom: 6em;
-  }
-
   .exp-grid-description{
     line-height: 2em;
-  }
-
-  hr{
-    margin: 3em auto 3em auto;
   }
 
   .skills-hr{
     margin: 0.7em auto 0 auto;
   }
 
-
-  #name{
-    margin: 1em auto 2em auto;
+  .skills-subtitle{
+    padding: .7em 0 0 0;
   }
 
   .navitem:hover{
-    background: #ffcc80;
+    text-decoration: underline;
+    text-decoration-color: #E1F5FE;
     transition-duration: 0.3s;
   }
 
@@ -82,11 +92,44 @@
       text-align: center;
   }
 
-
   .main-section {
-    padding: 2em 4em 4em 4em;
+    padding: 0 5em 1.7em 5em;
+    margin: 0 0 3.5em 0;
     background: white;
+    border-radius: 0 0 .3em .3em;
     box-sizing: border-box;
+    box-shadow: none;
+  }
+
+  .navitem{
+    padding:.1em .3em .1em .3em;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 1em;
+  }
+
+  .sub-paragraph {
+    font-size: 1.2em;
+  }
+
+  .navitem {
+    text-decoration: none;
+    color:black;
+  }
+
+
+  #me{
+    height: 12em;
+    width: 12em;
+    margin: 5em auto 3.6em auto ;
+  }
+
+  #icon-set{
+      margin-bottom: 6em;
+  }
+
+  #name{
+    margin: 1em auto 2em auto;
   }
 
   #lastname {
@@ -101,40 +144,14 @@
   #navbar{
     background: white;
     text-align: right;
-    padding-bottom: 2em;
+    padding: 1.6em 4em 1.6em 4em;
+    margin: 0;
+    background: #E1F5FE;
+    border-radius: .3em .3em 0 0;
   }
 
-  .navitem{
-    padding:0 .3em 0 .3em;
-    color: black;
-    font-size: 1.2em;
-    border-radius: 5%
-  }
-
-  .sub-paragraph {
-    font-size: 1.2em;
-  }
-
-  h5{
-    font-size: 1em;
-  }
-
-  li {
-    list-style-type: none;
-  }
-
-  .navitem {
-    text-decoration: none;
-    color:black;
-  }
-
-  .cta{
-    width: 250px;
-  }
-
-  h1 {
-    margin: 0 auto;
-    font-size: 3em;
+  #contact{
+    margin: 2.4em auto 3em auto;
   }
 
 }
