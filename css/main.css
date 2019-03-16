@@ -45,8 +45,8 @@ h5 {
   font-size: .8em;
 }
 
-.main-section{
-  box-shadow: 0 0 10px black;
+p{
+  margin: 0 auto 1em;
 }
 
 .bold{
@@ -57,6 +57,10 @@ h5 {
   padding: 0;
 }
 
+.big-paragraph{
+  text-align: left;
+  padding: 0 1em 0 1em;
+}
 
 .sub-paragraph{
   font-size: 1em;
@@ -67,11 +71,12 @@ h5 {
 
 .main-section {
   background: white;
-  padding: 1.2em;
+  padding: 1.6em;
   margin: 1.1em;
   text-align: center;
   border-radius: .3em;
   z-index: -1;
+  box-shadow: 0 0 10px black;
 }
 
 .section-description{
@@ -110,8 +115,10 @@ h5 {
 
 .exp-grid {
   display: grid;
-  grid-template-areas: "description link-icon";
-  grid-template-columns: auto;
+  grid-template-areas:
+  "description"
+  "link-icon";
+  grid-template-rows: 2;
   grid-gap: .8em;
   margin: 1em auto;
   align-items: center;
@@ -146,15 +153,13 @@ h5 {
 
   background: black;
   color: white;
-  width: 10em;
+  width: 8em;
   opacity: .9;
 
   border-radius: .3em;
-
-  right: -50%;
-  bottom: 0;
-
-  padding: .3em 0;
+  left: -140%;
+  top: -100%;
+  padding: .3em .3em;
 }
 
 .closed-source:hover .closed-tooltip{
@@ -198,6 +203,9 @@ h5 {
   margin-bottom: .5em;
 }
 
+#contact{
+  margin: 1em auto 2em auto;
+}
 
 #icon-set {
   text-align: center;

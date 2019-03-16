@@ -23,7 +23,7 @@
 
       <div class="top-bar">
 
-        <nav id = "navbar" class="desktop-only">
+        <nav id="navbar" class="desktop-only">
           <a class="navitem" href="#about">About</a>
           <a class="navitem" href="#experience">Experience</a>
           <a class="navitem" href="#skills">Skills</a>
@@ -35,27 +35,33 @@
 
         <img id ="me" src="static/me.jpg" alt="Tyler Kluszczynski.">
 
-        <h5> I'm </h5>
+        <h5>I'm</h5>
 
         <div id="name">
+
           <h1>Tyler</h1>
           <h1 id="lastname">Kluszczynski</h1>
+
         </div>
 
-        <p class = "sub-paragraph">A graduating senior and incoming devops engineer from Santa&nbsp;Clarita, California.</p>
+        <p class = "sub-paragraph">
+          A graduating senior and incoming DevOps engineer from
+          Santa&nbsp;Clarita, California.
+        </p>
 
-        <a href="#skills" class="cta desktop-only double-button">
-          View my skills
-        </a>
-        <a href="#contact" class="cta desktop-only secondary double-button">
-          Contact Me
-        </a>
+        <span>
+          <a href="#skills" class="cta desktop-only double-button">
+            View my skills
+          </a>
+          <a href="#contact" class="cta desktop-only secondary double-button">
+            Contact Me
+          </a>
+        </span>
 
         <hr id="about">
 
         <div>
-
-          <h2> About Me </h2>
+          <h2>About Me</h2>
 
           <div>
             <h3 class="section-subtitle">
@@ -63,11 +69,19 @@
               B.S. in CIT @ CSUN with&nbsp;Honors
             </h3>
 
-            <p class = "sub-paragraph section-description">GPA: <span class="bold">3.72</span>.</p>
-            <p class = "sub-paragraph section-description">Upper Division GPA: <span class="bold">3.93</span>.</p>
-            <p class = "sub-paragraph section-description">Minor in Religious Studies.</p>
+            <p class = "sub-paragraph section-description">GPA:
+              <span class="bold">3.72</span>.
+            </p>
+            <p class = "sub-paragraph section-description">Upper Division GPA:
+              <span class="bold">3.93</span>.
+            </p>
+            <p class = "sub-paragraph section-description">
+              Minor in Religious Studies.
+            </p>
 
-            <p class = "sub-paragraph section-description"> Obtaining: <span class="bold">May 2019.</span> </p>
+            <p class = "sub-paragraph section-description">Obtaining:
+              <span class="bold">May 2019</span>.
+            </p>
           </div>
 
           <div>
@@ -77,12 +91,10 @@
             </h3>
 
             <p class = "sub-paragraph section-description">
-
               1 year of professional DevOps experience through hands-on projects.
               Experience with AWS infrastructure, containerization and container
               orchistration, infrastructure as code, configuration management,
               monitoring and CI - CD Pipelines.
-
             </p>
 
             <a href = "#skills" class="cta midline-cta">
@@ -90,12 +102,12 @@
             </a>
 
           </div>
-
         </div>
 
         <hr id="experience">
 
         <div>
+
           <h2>Experience</h2>
 
           <h3 class = "section-subtitle">DevOps Capstone Project</h3>
@@ -103,14 +115,14 @@
           <div class="exp-grid">
 
             <div class = "exp-grid-description">
-              <p>
+              <p class="big-paragraph">
                 I'm currently developing AWS infrastructure in an agile enviornment,
                 working alongside a team of peers and a client. I'm building and
                 documenting reusable Terraform modules for our AWS infrastructure.
                 I've also automated Docker image building and deployment from GitLab to AWS ECS
                 using GitLab CI.
               </p>
-              <p>
+              <p class="big-paragraph">
                 Recently, I set up Datadog monitoring with an AWS Lambda function,
                 a Datadog ECS agent and Datadog AWS integration with an IAM role.
                 Alongside this, I'm training a less experienced team member in advanced
@@ -119,9 +131,13 @@
               </p>
             </div>
 
-            <div class = "exp-grid-icon closed-source">
-              <i class="fab closed-source-icon individual-icon  fa-gitlab fa-2x"></i>
-              <span class = "closed-tooltip">This project is closed source.</span>
+            <div class = "exp-grid-icon">
+
+              <span class="closed-source">
+                <i class="fab closed-source-icon individual-icon  fa-gitlab fa-2x"></i>
+                <span class = "closed-tooltip">This project is closed source.</span>
+              </span>
+
             </div>
 
           </div>
@@ -133,23 +149,26 @@
           <div class = "exp-grid">
 
             <div class = "exp-grid-description">
-              <p>
+              <p class="big-paragraph">
                 I worked with a group of peers to develop AWS infrastructure as
                 part of a senior-design class. During the class, I automated static
-                website delivery from GitHub to an S3 bucket using CircleCI. After this
-                I deployed the website to AWS Cloudfront. I also Obtained TLS
+                website delivery from GitHub to an S3 bucket using CircleCI.
+              </p>
+              <p class="big-paragraph">
+                After this, I deployed the website to AWS Cloudfront. I also obtained TLS
                 certificates using Let's Encrypt and AWS Certificate Manager for the
-                website. We also created EC2 instances with Terraform which
+                website. We also created EC2 instances with Terraform, which
                 I configured using Ansible.
               </p>
             </div>
 
             <div class = "exp-grid-icon">
+
               <a href="https://github.com/CSUN-SeniorDesign/eat-infrastructure">
                 <i class="fab individual-icon fa-github fa-2x"></i>
               </a>
-            </div>
 
+            </div>
           </div>
 
           <hr class="exp-hr">
@@ -159,10 +178,10 @@
           <div class = "exp-grid">
 
             <div class = "exp-grid-description">
-              <p>
-                This website was designed by me, using Adobe XD.
+              <p class="big-paragraph">
+                I designed this website using Adobe XD.
               </p>
-              <p>
+              <p class="big-paragraph">
                 After the website was designed, I developed it using HTML,
                 CSS, and Font-Awesome for icons. The website is hosted using
                 GitLab pages, with Cloudflare as a DNS provider and caching
@@ -172,9 +191,11 @@
             </div>
 
             <div class = "exp-grid-icon">
+
               <a href="https://github.com/tklusz/WebsiteCode">
                 <i class="fab individual-icon fa-github fa-2x"></i>
               </a>
+
             </div>
 
           </div>
@@ -185,9 +206,9 @@
 
           <div class = "exp-grid">
             <div class = "exp-grid-description">
-              <p>
+              <p class="big-paragraph">
                 As part of my capstone project, we are also assigned weekly assignments.
-                Some examples included creating a LAMP stack image
+                Some examples include creating a LAMP stack image
                 using a Dockerfile, and using Ansible playbooks to configure a LAMP stack.
                 I completed a write-up for each project which contains further
                 explanation of the task and my solution.
@@ -205,9 +226,9 @@
         <hr class = "exp-hr">
 
         <h3 class = "section-subtitle">View all my experience:</h3>
-
         <a href="/static/Tyler-Kluszczynski-Resume.pdf" class="cta">
-          <i class="fas fa-download"></i> My Resume
+          <i class="fas fa-download"></i>
+          My Resume
         </a>
 
       <hr id="skills">
@@ -218,57 +239,57 @@
 
       <h3 class = "section-subtitle less-top">DevOps Skills</h3>
 
-      <p class = "bold skills-subtitle sub-paragraph"> AWS: </p>
-      <p class = "sub-paragraph">
+      <p class = "bold skills-subtitle sub-paragraph">AWS:</p>
+      <p class = "sub-paragraph skill-list">
         VPC, ALB, ASG, EC2, RDS, IAM, ECR, ECS, ACM, Route 53, S3, Cloudfront, Lambda.
       </p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Containerization: </p>
-      <p class = "sub-paragraph">
+      <p class = "bold skills-subtitle sub-paragraph">Containerization:</p>
+      <p class = "sub-paragraph skill-list">
         Dockerfiles, Docker container orchistration on ECS,
         Docker-compose, volumes.
       </p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Infrastructure as Code</p>
-      <p class = "sub-paragraph"> Terraform with modules.</p>
+      <p class = "bold skills-subtitle sub-paragraph">Infrastructure as Code:</p>
+      <p class = "sub-paragraph skill-list">Terraform with modules.</p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Monitoring: </p>
-      <p class = "sub-paragraph"> Datadog. </p>
+      <p class = "bold skills-subtitle sub-paragraph">Monitoring:</p>
+      <p class = "sub-paragraph skill-list">Datadog.</p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Configuration Management: </p>
-      <p class = "sub-paragraph"> Ansible.</p>
+      <p class = "bold skills-subtitle sub-paragraph">Configuration Management:</p>
+      <p class = "sub-paragraph skill-list">Ansible.</p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> CI - CD Pipelines: </p>
-      <p class = "sub-paragraph">GitLab CI, CircleCI.</p>
+      <p class = "bold skills-subtitle sub-paragraph">CI - CD Pipelines:</p>
+      <p class = "sub-paragraph skill-list">GitLab CI, CircleCI.</p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Scripting: </p>
-      <p class = "sub-paragraph">Python, Bash.</p>
+      <p class = "bold skills-subtitle sub-paragraph">Scripting:</p>
+      <p class = "sub-paragraph skill-list">Python, Bash.</p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Databases: </p>
-      <p class = "sub-paragraph">MySQL, SQLite.</p>
+      <p class = "bold skills-subtitle sub-paragraph">Databases:</p>
+      <p class = "sub-paragraph skill-list">MySQL, SQLite.</p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Source Control: </p>
-      <p class = "sub-paragraph">GitHub, GitLab, Bitbucket.</p>
+      <p class = "bold skills-subtitle sub-paragraph">Source Control:</p>
+      <p class = "sub-paragraph skill-list">GitHub, GitLab, Bitbucket.</p>
 
       <hr class = "exp-hr skills-hr">
 
       <h3 class = "section-subtitle less-top">Secondary Skills</h3>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Web Development: </p>
-      <p class = "sub-paragraph"> HTML, CSS, Javascript.</p>
+      <p class = "bold skills-subtitle sub-paragraph"> Web Development:</p>
+      <p class = "sub-paragraph skill-list">HTML, CSS, Javascript.</p>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Web Design: </p>
-      <p class = "sub-paragraph"> Adobe XD.</p>
+      <p class = "bold skills-subtitle sub-paragraph">Web Design:</p>
+      <p class = "sub-paragraph skill-list">Adobe XD.</p>
 
       <hr id="contact">
 
       <h2 class ="contact-text">Contact Me</h2>
 
       <div id="icon-set">
+        <a href="mailto:tylerkluszczynski@gmail.com"><i class="fas social-icon fa-envelope fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/tyler-kluszczynski/"><i class="fab social-icon fa-linkedin fa-2x"></i></a>
         <a href="https://github.com/tklusz"><i class="fab social-icon fa-github fa-2x"></i></a>
         <a href="https://gitlab.com/tklusz"><i class="fab social-icon fa-gitlab fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/tyler-kluszczynski/"><i class="fab social-icon fa-linkedin fa-2x"></i></a>
-        <a href="mailto:tylerkluszczynski@gmail.com"><i class="fas social-icon fa-envelope fa-2x"></i></a>
       </div>
 
     </div>

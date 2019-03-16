@@ -32,6 +32,15 @@
     list-style-type: none;
   }
 
+  p{
+    line-height: 1.6;
+  }
+
+  .big-paragraph{
+    text-align: left;
+    padding: 0 6em 0 6em;
+  }
+
   .whole-contents{
     box-shadow: 0 0 15px black;
     border-radius: .3em;
@@ -47,7 +56,8 @@
   }
 
   .closed-tooltip{
-    right: -180%;
+    left: -145%;
+    top: -120%;
   }
 
   .double-button{
@@ -69,9 +79,6 @@
     margin-bottom: .2em;
   }
 
-  .exp-grid-description{
-    line-height: 2em;
-  }
 
   .skills-hr{
     margin: 0.7em auto 0 auto;
@@ -112,11 +119,23 @@
     font-size: 1.2em;
   }
 
+  .section-description{
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+
+  .skill-list{
+    padding: .6em 12em 1em 12em;
+  }
+
   .navitem {
     text-decoration: none;
     color:black;
   }
 
+  .exp-grid-icon{
+    padding-bottom: .5em;
+  }
 
   #me{
     height: 12em;
