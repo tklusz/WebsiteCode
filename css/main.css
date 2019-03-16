@@ -183,6 +183,11 @@ p{
   display: none;
 }
 
+.both-gits{
+  display: inline-block;
+  padding: 0 1em;
+}
+
 #icon-set > * {
   visibility: visible;
   margin: .6em 1em 0 .6em;
