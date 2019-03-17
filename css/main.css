@@ -28,13 +28,13 @@ h1 {
 
 h2 {
   margin: 0 auto;
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: normal;
 }
 
 h3{
   padding: 1.25em 0 .35em 0;
-  font-size: 1.2em;
+  font-size: 1.35sem;
   font-weight: normal;
   margin: 0 auto;
 }
@@ -46,21 +46,18 @@ h5 {
   font-size: .8em;
 }
 
-p{
-  margin: 0 auto 1em;
+p {
+  margin: 0 auto .8em;
 }
 
-.bold{
+.bold {
   font-weight: bold;
-}
-
-.small-padding {
-  padding: 0;
 }
 
 .big-paragraph{
   text-align: left;
   padding: 0 1em 0 1em;
+
 }
 
 .sub-paragraph{
@@ -80,13 +77,12 @@ p{
   box-shadow: 0 0 10px black;
 }
 
-.section-description{
-  padding: .6em 0 .5em 0 ;
-  line-height: 1.5em;
+.education-list{
+  padding: .7em 0 0 0;
 }
 
-.skills-subtitle{
-  padding: .5em 0 0 0;
+.devops-subtitle{
+  padding-bottom: .8em;
 }
 
 .skills-hr {
@@ -110,6 +106,10 @@ p{
   width: 200px;
 }
 
+.midline-cta{
+  margin-top: 1.6em;
+}
+
 .cta:hover, .individual-icon:hover{
   opacity: 1; transition-delay: 80ms, 80ms;
 }
@@ -127,7 +127,7 @@ p{
 
 .exp-grid-description {
   grid-area: description;
-  line-height: 1.3em;
+  line-height: 1.45em;
 }
 
 .exp-grid-icon {
@@ -137,7 +137,7 @@ p{
 .exp-hr {
   width: 80%;
   color:#29B6F6;
-  margin: 0 auto 0 auto;
+  margin: 1.25em auto 0 auto;
 }
 
 
@@ -167,10 +167,6 @@ p{
   visibility: visible;
 }
 
-.desktop-icon{
-  display: none;
-}
-
 .individual-icon{
   color: black;
   opacity: .85;
@@ -188,6 +184,27 @@ p{
   display: inline-block;
   padding: 0 1em;
 }
+
+.skill-grid{
+  display: grid;
+  align-items: end;
+  grid-template-columns: 100%;
+  padding: 0 1em 0 1em;
+}
+
+.grid-title{
+  font-size: 1.1em;
+}
+
+.grid-paragraph{
+  padding: 0em;
+}
+
+.section-description{
+  line-height: 1.45em;
+  text-align: center;
+}
+
 
 #icon-set > * {
   visibility: visible;
@@ -210,7 +227,7 @@ p{
 }
 
 #contact{
-  margin: 1em auto 2em auto;
+  margin: 1.25em auto 2em auto;
 }
 
 #icon-set {

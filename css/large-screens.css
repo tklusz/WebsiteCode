@@ -12,12 +12,12 @@
   }
 
   h2{
-    font-size: 2.2em;
+    font-size: 2.25em;
   }
 
   h3{
     font-size: 1.5em;
-    padding: 2.5em 0 .35em 0;
+    padding: 2em 0 .35em 0;
   }
 
   h5{
@@ -33,7 +33,7 @@
   }
 
   p{
-    line-height: 1.6;
+    line-height: 1.4;
   }
 
   .big-paragraph{
@@ -71,32 +71,14 @@
     margin-bottom: 1.5em;
   }
 
-  .less-top {
-    padding: 2em 0 .35em 0;
-  }
-
-  .devops-margin{
-    margin-bottom: .2em;
-  }
-
-
   .skills-hr{
-    margin: 0.7em auto 0 auto;
-  }
-
-  .skills-subtitle{
-    padding: .7em 0 0 0;
+    margin: 3em auto 0 auto;
   }
 
   .navitem:hover{
     text-decoration: underline;
     text-decoration-color: #E1F5FE;
     transition-duration: 0.3s;
-  }
-
-  .desktop-icon{
-      display: block;
-      text-align: center;
   }
 
   .main-section {
@@ -109,38 +91,50 @@
   }
 
   .navitem{
-    padding:.1em .3em .1em .3em;
+    padding:.1em .5em .1em .5em;
     color: black;
     font-size: 1.2em;
-    border-radius: 1em;
+    text-decoration: none;
   }
 
   .sub-paragraph {
     font-size: 1.2em;
   }
 
-  .section-description{
-    padding-left: 3em;
-    padding-right: 3em;
+  .section-line-1{
+    display: inline-block;
+    padding-right: .7em;
   }
 
   .skill-list{
     padding: .6em 5em 1em 5em;
   }
 
-  .navitem {
-    text-decoration: none;
-    color:black;
+  .devops-subtitle{
+    padding-top: 1.3em;
   }
-
   .exp-grid-icon{
     padding-bottom: .5em;
+  }
+
+  .skill-grid{
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: center;
+  }
+
+  .grid-paragraph{
+    padding: 0em 1.5em 0em 1.5em;
+  }
+
+  .section-description{
+    line-height: 1.4em;
   }
 
   #me{
     height: 12em;
     width: 12em;
-    margin: 5em auto 3.6em auto ;
+    margin: 5em auto 3.3em auto ;
   }
 
   #icon-set{
@@ -170,7 +164,7 @@
   }
 
   #contact{
-    margin: 2.4em auto 3em auto;
+    margin: 3em auto 3em auto;
   }
 
 }

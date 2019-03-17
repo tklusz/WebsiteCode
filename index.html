@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/small-screens.css">
     <link rel="stylesheet" href="css/large-screens.css">
+    <link rel="stylesheet" href="css/xl-screens.css">
     <link rel="stylesheet" href="css/animations.css">
+
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -38,18 +40,16 @@
 
       <div class="main-section">
 
-        <img id ="me" src="static/me.jpg" alt="Tyler Kluszczynski.">
+        <img id="me" src="static/me.jpg" alt="Tyler Kluszczynski.">
 
         <h5>I'm</h5>
 
         <div id="name">
-
           <h1>Tyler</h1>
           <h1 id="lastname">Kluszczynski</h1>
-
         </div>
 
-        <p class = "sub-paragraph">
+        <p class="sub-paragraph">
           A graduating senior and incoming DevOps engineer from
           Santa&nbsp;Clarita, California.
         </p>
@@ -74,29 +74,33 @@
               B.S. in CIT @ CSUN with&nbsp;Honors
             </h3>
 
-            <p class = "sub-paragraph section-description">GPA:
-              <span class="bold">3.72</span>.
-            </p>
-            <p class = "sub-paragraph section-description">Upper Division GPA:
-              <span class="bold">3.93</span>.
-            </p>
-            <p class = "sub-paragraph section-description">
-              Minor in Religious Studies.
-            </p>
-
-            <p class = "sub-paragraph section-description">Obtaining:
-              <span class="bold">May 2019</span>.
-            </p>
+            <div class="education-list">
+              <p class = "section-description section-line-1">GPA:
+                <span class="bold">3.72</span>.
+              </p>
+              <p class = "section-description section-line-1">Upper Division GPA:
+                <span class="bold">3.93</span>.
+              </p>
+              <p class = "section-description section-line-2">
+                Minor in Religious Studies.
+              </p>
+              <p class = "section-description section-line-2">Obtaining:
+                <span class="bold">May 2019</span>.
+              </p>
+            </div>
           </div>
 
           <div>
-            <h3 class="section-subtitle devops-margin">
+            <h3 class="section-subtitle devops-subtitle">
               <i class="fas fa-cloud"></i>
-              DevOps
+              DevOps Experience
             </h3>
 
-            <p class = "sub-paragraph section-description">
+            <p class = "big-paragraph section-description">
               1 year of professional DevOps experience through hands-on projects.
+            </p>
+
+            <p class = "big-paragraph section-description">
               Experience with AWS infrastructure, containerization and container
               orchistration, infrastructure as code, configuration management,
               monitoring and CI - CD Pipelines.
@@ -115,7 +119,7 @@
 
           <h2>Experience</h2>
 
-          <h3 class = "section-subtitle">DevOps Capstone Project</h3>
+          <h3 class="section-subtitle">DevOps Capstone Project</h3>
 
           <div class="exp-grid">
 
@@ -252,47 +256,138 @@
 
       <h3 class = "section-subtitle less-top">DevOps Skills</h3>
 
-      <p class = "bold skills-subtitle sub-paragraph">AWS:</p>
-      <p class = "sub-paragraph skill-list">
-        VPC, ALB, ASG, EC2, RDS, IAM, ECR, ECS, ACM, Route 53, S3, Cloudfront, Lambda.
-      </p>
+      <div class="skill-grid">
 
-      <p class = "bold skills-subtitle sub-paragraph">Containerization:</p>
-      <p class = "sub-paragraph skill-list">
-        Dockerfiles, Docker container orchistration on ECS,
-        Docker-compose, volumes.
-      </p>
+        <div>
+          <h3 class="bold grid-title">
+            AWS Services:
+          </h3>
+          <div class="grid-paragraph skill-list">
+            VPC, ALB, ASG, EC2, RDS, IAM, ECR, ECS, ACM, Route 53, S3, Cloudfront, Lambda.
+          </div>
+        </div>
 
-      <p class = "bold skills-subtitle sub-paragraph">Infrastructure as Code:</p>
-      <p class = "sub-paragraph skill-list">Terraform with modules.</p>
+        <div>
+          <h3 class="bold grid-title">
+            Containerization:
+          </h3>
 
-      <p class = "bold skills-subtitle sub-paragraph">Monitoring:</p>
-      <p class = "sub-paragraph skill-list">Datadog.</p>
+          <div class="grid-paragraph">
+            Dockerfiles, container orchistration with ECS, Docker-compose, volumes.
+          </div>
+        </div>
 
-      <p class = "bold skills-subtitle sub-paragraph">Configuration Management:</p>
-      <p class = "sub-paragraph skill-list">Ansible.</p>
+        <div>
+          <h3 class=" bold grid-title">
+            Monitoring:
+          </h3>
 
-      <p class = "bold skills-subtitle sub-paragraph">CI - CD Pipelines:</p>
-      <p class = "sub-paragraph skill-list">GitLab CI, CircleCI.</p>
+          <div class="grid-paragraph skill-list">
+            Datadog.
+          </div>
+        </div>
 
-      <p class = "bold skills-subtitle sub-paragraph">Scripting:</p>
-      <p class = "sub-paragraph skill-list">Python, Bash.</p>
+        <div>
+          <h3 class="bold grid-title">
+            Infrastructure as Code:
+          </h3>
 
-      <p class = "bold skills-subtitle sub-paragraph">Databases:</p>
-      <p class = "sub-paragraph skill-list">MySQL, SQLite.</p>
+          <div class="grid-paragraph">
+            Terraform with modules.
+          </div>
+        </div>
 
-      <p class = "bold skills-subtitle sub-paragraph">Source Control:</p>
-      <p class = "sub-paragraph skill-list">GitHub, GitLab, Bitbucket.</p>
+        <div>
+          <h3 class=" bold grid-title">
+            Configuration Management:
+          </h3>
+
+          <div class="grid-paragraph skill-list">
+            Ansible
+          </div>
+        </div>
+
+        <div>
+          <h3 class="bold grid-title">
+            CI - CD Pipelines:
+          </h3>
+
+          <div class="grid-paragraph">
+            GitLab CI, CircleCI.
+          </div>
+        </div>
+
+        <div>
+          <h3 class=" bold grid-title">
+            Scripting:
+          </h3>
+
+          <div class="grid-paragraph skill-list">
+            Python, Bash.
+          </div>
+        </div>
+
+        <div>
+          <h3 class="bold grid-title">
+            Databases:
+          </h3>
+
+          <div class="grid-paragraph">
+            MySQL, SQLite.
+          </div>
+        </div>
+
+        <div>
+          <h3 class=" bold grid-title">
+            Source Control:
+          </h3>
+
+          <div class="grid-paragraph skill-list">
+            GitHub, GitLab, Bitbucket.
+          </div>
+        </div>
+
+        <div>
+          <h3 class=" bold grid-title">
+            Cloud Platforms:
+          </h3>
+
+          <div class="grid-paragraph skill-list">
+            AWS, DigitalOcean.
+          </div>
+        </div>
+
+    </div>
+
 
       <hr class = "exp-hr skills-hr">
 
       <h3 class = "section-subtitle less-top">Secondary Skills</h3>
 
-      <p class = "bold skills-subtitle sub-paragraph"> Web Development:</p>
-      <p class = "sub-paragraph skill-list">HTML, CSS, Javascript.</p>
+      <div class="skill-grid">
 
-      <p class = "bold skills-subtitle sub-paragraph">Web Design:</p>
-      <p class = "sub-paragraph skill-list">Adobe XD.</p>
+        <div>
+          <h3 class=" bold grid-title">
+            Web Development:
+          </h3>
+
+          <div class="grid-paragraph skill-list">
+            HTML, CSS, Javascript.
+          </div>
+        </div>
+
+        <div>
+          <h3 class=" bold grid-title">
+            Web Design:
+          </h3>
+
+          <div class="grid-paragraph skill-list">
+            Adobe XD.
+          </div>
+        </div>
+
+      </div>
+
 
       <hr id="contact">
 
