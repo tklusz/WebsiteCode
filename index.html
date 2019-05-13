@@ -71,7 +71,7 @@
           <div>
             <h3 class="section-subtitle">
               <i class="fas fa-graduation-cap"></i>
-              B.S. in CIT @ CSUN with&nbsp;Honors
+              B.S. in CIT at CSUN with&nbsp;Honors
             </h3>
 
             <div class="education-list">
@@ -84,7 +84,7 @@
               <p class = "section-description section-line-2">
                 Minor in Religious Studies.
               </p>
-              <p class = "section-description section-line-2">Obtaining:
+              <p class = "section-description section-line-2">Obtained:
                 <span class="bold">May 2019</span>.
               </p>
             </div>
@@ -119,22 +119,54 @@
 
           <h2>Experience</h2>
 
+          <h3 class = "section-subtitle">Kubernetes Deployment with EKS</h3>
+
+          <div class = "exp-grid">
+
+            <div class = "exp-grid-description">
+              <p class="big-paragraph">
+                I created a Kubernetes deployment for my website using AWS,
+                Terraform, Python, Docker and Kubectl. I created various Terraform
+                modules for AWS services (EKS, ASG, ECR, VPC, IAM).
+              </p>
+              <p class="big-paragraph">
+                I used Python with Boto3 and subprocesses for configuration.
+                First, I pulled the kubeconfig from EKS, then applied a configuration
+                map using kubectl. Next, I built a Docker image from a Dockerfile
+                (which contains my website code on an Apache2 server) and deployed
+                 it to ECR. Finally, I created a service using kubectl,
+                 and exposed the service with an external load balancer (ELB) and
+                 public IP address.
+              </p>
+            </div>
+
+            <div class = "exp-grid-icon">
+
+              <a href="https://github.com/tklusz/kubernetes-deployment">
+                <i class="fab individual-icon fa-github fa-2x"></i>
+              </a>
+
+            </div>
+          </div>
+
+          <hr class = "exp-hr">
+
           <h3 class="section-subtitle">DevOps Capstone Project</h3>
 
           <div class="exp-grid">
 
             <div class = "exp-grid-description">
               <p class="big-paragraph">
-                I'm currently developing AWS infrastructure in an agile enviornment,
-                working alongside a team of peers and a client. I'm building and
-                documenting reusable Terraform modules for our AWS infrastructure.
-                I've also automated Docker image building and deployment from GitLab to AWS ECS
+                I developed AWS infrastructure in an agile enviornment an
+                worked alongside a team of peers. I built and
+                documented reusable Terraform modules for our AWS infrastructure.
+                I also automated Docker image building and deployment from GitLab to AWS ECS
                 using GitLab CI.
               </p>
               <p class="big-paragraph">
-                Recently, I set up Datadog monitoring with an AWS Lambda function,
+                I implemented Datadog monitoring with an AWS Lambda function,
                 a Datadog ECS agent and Datadog AWS integration with an IAM role.
-                Alongside this, I'm training a less experienced team member in advanced
+                Alongside this, I trained a less experienced team member in advanced
                 Terraform topics such as Terraform modules and container
                 orchistration using ECS.
               </p>
@@ -165,9 +197,9 @@
               </p>
               <p class="big-paragraph">
                 After this, I deployed the website to AWS Cloudfront. I also obtained TLS
-                certificates using Let's Encrypt and AWS Certificate Manager for the
-                website. We also created EC2 instances with Terraform, which
-                I configured using Ansible.
+                certificates using Let's Encrypt and AWS Certificate Manager.
+                We also created EC2 instances with Terraform, which I configured
+                 using Ansible.
               </p>
             </div>
 
@@ -233,11 +265,11 @@
           <div class = "exp-grid">
             <div class = "exp-grid-description">
               <p class="big-paragraph">
-                As part of my capstone project, we are also assigned weekly assignments.
-                Some examples include creating a LAMP stack image
-                using a Dockerfile, and using Ansible playbooks to configure a LAMP stack.
-                I completed a write-up for each project which contains further
-                explanation of the task and my solution.
+                As part of my capstone project, we were given weekly assignments.
+                Some examples include creating a LAMP stack image using a
+                Dockerfile, and setting up Prometheus and Node Exporter using
+                a Dockerfile. I completed a write-up for each assignment which
+                contains further explanation of the task and my solution.
               </p>
           </div>
 
@@ -272,7 +304,7 @@
             AWS Services:
           </h3>
           <div class="grid-paragraph skill-list">
-            VPC, ALB, ASG, EC2, RDS, IAM, ECR, ECS, ACM, Route 53, S3, Cloudfront, Lambda.
+            VPC, ALB, ELB, ASG, EC2, RDS, IAM, ECR, ECS, EKS, ACM, Route 53, S3, Cloudfront, Lambda.
           </div>
         </div>
 
@@ -282,7 +314,8 @@
           </h3>
 
           <div class="grid-paragraph">
-            Dockerfiles, container orchistration with ECS, Docker-compose, volumes.
+            Docker, ECS, Docker-compose.
+            Kubernetes with EKS.
           </div>
         </div>
 
@@ -292,7 +325,7 @@
           </h3>
 
           <div class="grid-paragraph skill-list">
-            Datadog.
+            Datadog. Prometheus with Node Exporter.
           </div>
         </div>
 
@@ -312,7 +345,7 @@
           </h3>
 
           <div class="grid-paragraph skill-list">
-            Ansible
+            Ansible.
           </div>
         </div>
 
