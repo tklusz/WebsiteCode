@@ -12,9 +12,12 @@
 	<link rel="stylesheet" href="css/animations.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+		integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+		crossorigin="anonymous">
+	</script>
 
-	<meta name="description" content="Tyler Kluszczynski's personal website.">
+	<meta name="description" content="Tyler Kluszczynski's website.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="icon" type="image/png" href="/static/me.jpg">
@@ -42,7 +45,7 @@
 			</div>
 
 			<p class="sub-paragraph">
-				A DevOps Engineer at Aledade Inc.
+				Senior DevOps Engineer at Aledade Inc.
 			</p>
 
 			<span>
@@ -59,16 +62,13 @@
 				<h2>About Me</h2>
 				<div>
 					<h3 class="section-subtitle">
-						<i class="fa fa-briefcase"></i> DevOps Engineer at Aledade Inc.
+						<em class="fa fa-briefcase"></em> Senior DevOps Engineer at Aledade Inc.
 					</h3>
-					<p class="big-paragraph section-description">
-						Recently brought onboard at Aledade Inc, looking forward to the new challenges and experiences.
-					</p>
 				</div>
 
 				<div>
 					<h3 class="section-subtitle">
-						<i class="fas fa-graduation-cap"></i>
+						<em class="fas fa-graduation-cap"></em>
 						B.S. in CIT at CSUN with&nbsp;Honors
 					</h3>
 					<div class="education-list">
@@ -81,18 +81,15 @@
 						<p class="section-description section-line-2">
 							Minor in Religious Studies.
 						</p>
-						<p class="section-description section-line-2">Obtained:
-							<span class="bold">May 2019</span>.
-						</p>
 					</div>
 				</div>
 
 				<div>
 					<h3 class="section-subtitle devops-subtitle">
-						<i class="fas fa-cloud"></i>
+						<em class="fas fa-cloud"></em>
 						DevOps Experience
 					</h3>
-					<p class="big-paragraph section-description">
+					<p class="about-paragraph big-paragraph section-description">
 						Experience with AWS infrastructure, containerization and container
 						orchestration, infrastructure as code, Python, PowerShell, Groovy
 						and Shell scripting, configuration management with Ansible, monitoring
@@ -108,61 +105,150 @@
 			<div>
 				<h2> Work Experience </h2>
 
-				<h3 class="section-subtitle">PSI Services LLC.</h3>
-				<h3 class="section-subtitle">AWS Migrations</h3>
+				<h3 class="section-subtitle">Aledade Inc.</h3>
+				<h3 class="section-subtitle">Static Code Analysis</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
 						<p class="big-paragraph">
-							One of my primary responsibilities included migrating on-premise applications to AWS EKS and EC2, and documenting any changes.
+							Leading a project to host Sonarqube on AWS EKS.
 						</p>
 						<p class="big-paragraph">
-							Two major migrations I've completed are PSI's business rules engine and SSO solution.
-							These were both migrated from an on-premise DC/OS cluster to AWS EKS, including creation of RDS databases with secret rotation, and Kubernetes secrets across multiple environments.
+							Created parallel deployments in production and nonproduction EKS clusters. Created RDS Postgres databases connected to the cluster.
+							Terraform leveraged for infrastructure creation across all projects.
 						</p>
 						<p class="big-paragraph">
-							I also migrated production and nonproduction Jira instances from on-premise virtualized servers to AWS EC2 using Packer and Terraform. I also moved the databases from on-premise to RDS Postgres instances.
+							Configured Bamboo and Bitbucket plugins to run static code analysis automatically when a
+							pull request is created, report the outcome onto the pull request in Bitbucket, and back in Sonarqube.
+						</p>
+					</div>
+				</div>
+
+				<h3 class="section-subtitle">Improving our Deployments</h3>
+				<div class="exp-grid">
+					<div class="exp-grid-description">
+						<p class="big-paragraph">
+							Implemented a blue-green deployment for our highest-traffic production application to reduce
+							30 seconds of downtime to 0 whenever a new version is deployed.
 						</p>
 						<p class="big-paragraph">
-							I've also containerized and migrated various in-house Java TomEE servers from virtual servers to DC/OS.
+							Used an Ansible playbook to bring up a parallel deployment with automatic rollback,
+							functionally eliminating downtime for the application whenever a new version is deployed.
+						</p>
+					</div>
+				</div>
+
+				<h3 class="section-subtitle">Pinpointing Spend</h3>
+				<div class="exp-grid">
+					<div class="exp-grid-description">
+						<p class="big-paragraph">
+							Created a Python function for AWS Lambda to automatically tag snapshots to match their EBS
+							volume counterparts.
 						</p>
 						<p class="big-paragraph">
-							All infrastructure was created as code using Terraform, and deployed to 2-5 environments depending on the application.
+							Untagged snapshots were responsible for 90% of untraced spend on AWS on the
+							day of the script. After the script ran, all of the spend was properly tagged under each
+							project.
+						</p>
+						<p class="big-paragraph">
+							6,500 snapshots initially changed, with 250+ additionally being tagged by the script each
+							day.
+						</p>
+					</div>
+				</div>
+
+
+				<h3 class="section-subtitle">Modernizing our Codebase</h3>
+				<div class="exp-grid">
+					<div class="exp-grid-description">
+						<p class="big-paragraph">
+							Worked with another engineer to refactor a large internal Python CLI tool used for Postgres
+							database administration.
+						</p>
+						<p class="big-paragraph">
+							Wrote unit and functional tests for the new code using Pytest.
+						</p>
+					</div>
+				</div>
+
+				<h3 class="section-subtitle">Constantly Improving</h3>
+				<div class="exp-grid">
+					<div class="exp-grid-description">
+						<p class="big-paragraph">
+							Updated Helm2 to Helm3 across production and nonproduction EKS clusters, including removing
+							tiller from all namespaces.
+						</p>
+						<p class="big-paragraph">
+							Hosted knowledge-sharing sessions with other team members, including initial onboarding for
+							a new employee.
 						</p>
 					</div>
 				</div>
 
 				<hr class="exp-hr">
-
-				<h3 class="section-subtitle">Continuous Integration and Delivery</h3>
+				<h3 class="section-subtitle">PSI Services LLC.</h3>
+				<h3 class="section-subtitle">Migrated local servers to AWS</h3>
+				<div class="exp-grid">
+					<div class="exp-grid-description">
+						<p class="big-paragraph">
+							One of my primary responsibilities included migrating on-premise applications to AWS EKS and
+							EC2.
+						</p>
+						<p class="big-paragraph">
+							Two major migrations I completed were PSI's business rules engine and SSO solution.
+							These were both migrated from an on-premise DC/OS cluster to AWS EKS, including creation of
+							RDS databases with secret rotation, and Kubernetes secrets.
+						</p>
+						<p class="big-paragraph">
+							Migrated production and nonproduction Jira instances from on-premise virtualized
+							servers to AWS EC2 using Packer and Terraform. The databases were also moved from on-prem to
+							RDS Postgres.
+						</p>
+						<p class="big-paragraph">
+							Containerized and migrated various in-house Java TomEE servers from virtual servers to
+							DC/OS.
+						</p>
+						<p class="big-paragraph">
+							All infrastructure was created as code using Terraform, and deployed to 2-5 environments
+							depending on the application.
+						</p>
+					</div>
+				</div>
+				<h3 class="section-subtitle">Implemented Continuous Integration and Delivery</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
 						<p class="big-paragraph">
 							As a part of these migrations, CI-CD pipelines were also created.
-							We use Jenkins with a company-wide shared library and additional groovy scripts for building apps.
-							As a part of this process, Dockerfiles are built, and apps are deployed via Buildmaster using helm charts or plain Kubernetes charts.
-							Buildmaster also allows for Bash and Powershell scripts, which I also leveraged as a part of the pipelines.
+							Jenkins was used with a company-wide shared library and additional groovy scripts for
+							building
+							apps.
+							As a part of this process, Dockerfiles were built, and apps were deployed via Buildmaster
+							using Helm charts or plain Kubernetes charts.
+							Buildmaster also allowed for Bash and Powershell scripts, which I also leveraged as a part
+							of
+							the pipelines.
 						</p>
 						<p class="big-paragraph">
-							I also created various CI-CD pipelines for new applications, and existing applications which previously required manual deployment.
+							Created various CI-CD pipelines for new and existing applications, which previously required
+							manual deployment.
 						</p>
 					</div>
 				</div>
-
-				<hr class="exp-hr">
-
-				<h3 class="section-subtitle">Monitoring and Alerting</h3>
+				<h3 class="section-subtitle">Substantial improvements to Monitoring and Alerting</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
 						<p class="big-paragraph">
-							I implemented a monitoring solution for 200+ websites and servers. The websites are monitored via HTTP requests, while the servers each have an agent.
-							Agents were installed via Rundeck which allows for scripts to be ran on multiple servers at the same time (as many of these are legacy servers without Configuration Management).
-							Agents were installed on both Windows and Linux machines. Some of these servers required custom Python and Nagios plugins, which I've also created.
+							Implemented a monitoring solution for 200+ websites and servers. The websites are
+							monitored via HTTP requests, while the servers each have an agent. Agents were installed via
+							Rundeck. Agents were installed on both Windows and Linux machines. Some of these servers
+							required custom Python and Nagios plugins, which I also created.
 						</p>
 						<p class="big-paragraph">
-							As a part of this process, I've migrated our monitoring solution from Icinga to our current solution, with no downtime required and no lapse of monitoring between solutions.
+							Migrated the monitoring solution away from Icinga, with no downtime required and no lapse of monitoring between solutions.
 						</p>
 						<p class="big-paragraph">
-							I also leveraged OpsGenie as a solution for alerting and on-call rotation. The OpsGenie integration is also set up to create a Jira ticket whenever a high priority alert is created.
+							Leveraged OpsGenie as a solution for alerting and on-call rotation. The OpsGenie
+							integration was also set up to create a Jira ticket whenever a high priority alert was
+							created.
 						</p>
 					</div>
 
@@ -173,29 +259,42 @@
 
 						<h2>Personal Projects</h2>
 
-						<h3 class="section-subtitle">MetroLink Advisory Emailer</h3>
-
+						<h3 class="section-subtitle">Terraform AWS EKS deployment</h3>
 						<div class="exp-grid">
-
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
-									Created a Python script that utilizes the Requests library to track train delays posted on the Metrolink website.
-									If a delay is deteced on one of a list of specified train nubmers, an alert will be sent to the user's email.
+									Created a Terraform EKS deployment with node autoscaling, RBAC config generation,
+									multiple namespaces, Kubernetes load balancer definition support (ingress + service)
+									and automatic Route 53 Private Hosted Zone configuration.
 								</p>
 							</div>
-
 							<div class="exp-grid-icon">
-
-								<a href="https://github.com/tklusz/MetrolinkAdvisoryEmailer">
-									<i class="fab individual-icon fa-github fa-2x"></i>
+								<a href="https://github.com/tklusz/EKSDeployment">
+									<em class="fab individual-icon fa-github fa-2x"></em>
 								</a>
-
 							</div>
 							<hr class="exp-hr">
 						</div>
 
-						<h3 class="section-subtitle">Kubernetes Deployment with EKS</h3>
+						<h3 class="section-subtitle">MetroLink Advisory Emailer</h3>
+						<div class="exp-grid">
+							<div class="exp-grid-description">
+								<p class="big-paragraph">
+									Created a Python script that utilizes the Requests library to track train delays
+									posted on the Metrolink website.
+									If a delay is detected on one of a list of specified train numbers, an alert will be
+									sent to the user's email.
+								</p>
+							</div>
+							<div class="exp-grid-icon">
+								<a href="https://github.com/tklusz/MetrolinkAdvisoryEmailer">
+									<em class="fab individual-icon fa-github fa-2x"></em>
+								</a>
+							</div>
+							<hr class="exp-hr">
+						</div>
 
+						<h3 class="section-subtitle">Website deployment on AWS EKS</h3>
 						<div class="exp-grid">
 
 							<div class="exp-grid-description">
@@ -216,11 +315,9 @@
 							</div>
 
 							<div class="exp-grid-icon">
-
 								<a href="https://github.com/tklusz/kubernetes-deployment">
-									<i class="fab individual-icon fa-github fa-2x"></i>
+									<em class="fab individual-icon fa-github fa-2x"></em>
 								</a>
-
 							</div>
 						</div>
 
@@ -232,7 +329,7 @@
 
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
-									I developed AWS infrastructure in an agile enviornment an
+									I developed AWS infrastructure in an agile environment an
 									worked alongside a team of peers. I built and
 									documented reusable Terraform modules for AWS infrastructure.
 									I also automated Docker image building and deployment from GitLab to AWS ECS
@@ -243,14 +340,14 @@
 									a Datadog ECS agent and Datadog AWS integration with an IAM role.
 									Alongside this, I trained a less experienced team member in advanced
 									Terraform topics such as Terraform modules and container
-									orchistration using ECS.
+									orchestration using ECS.
 								</p>
 							</div>
 
 							<div class="exp-grid-icon">
 
 								<span class="closed-source">
-									<i class="fab closed-source-icon individual-icon  fa-gitlab fa-2x"></i>
+									<em class="fab closed-source-icon individual-icon  fa-gitlab fa-2x"></em>
 									<span class="closed-tooltip">This project is closed source.</span>
 								</span>
 
@@ -281,7 +378,7 @@
 							<div class="exp-grid-icon">
 
 								<a href="https://github.com/CSUN-SeniorDesign/eat-infrastructure">
-									<i class="fab individual-icon fa-github fa-2x"></i>
+									<em class="fab individual-icon fa-github fa-2x"></em>
 								</a>
 
 							</div>
@@ -309,7 +406,7 @@
 									a droplet with a floating IP. Then, I created a firewall to
 									allow for HTTP, HTTPS and SSH traffic. I also created a
 									multistage CI-CD pipeline with GitLab CI, utilizing the GitLab
-									registry to store an intermiedate container image. Finally,
+									registry to store an intermediate container image. Finally,
 									the code gets deployed to DigitalOcean through the CI-CD
 									pipeline using sshpass.
 								</p>
@@ -319,13 +416,13 @@
 
 								<div class="both-gits">
 									<a href="https://github.com/tklusz/WebsiteCode">
-										<i class="fab individual-icon fa-github fa-2x"></i>
+										<em class="fab individual-icon fa-github fa-2x"></em>
 									</a>
 								</div>
 
 								<div class="both-gits">
 									<a href="https://gitlab.com/tklusz/tklusz.gitlab.io">
-										<i class="fab individual-icon fa-gitlab fa-2x"></i>
+										<em class="fab individual-icon fa-gitlab fa-2x"></em>
 									</a>
 								</div>
 
@@ -350,7 +447,7 @@
 
 							<div class="exp-grid-icon">
 								<a href="https://github.com/tklusz/CapstoneAssignments">
-									<i class="fab individual-icon fa-github fa-2x"></i>
+									<em class="fab individual-icon fa-github fa-2x"></em>
 								</a>
 							</div>
 
@@ -360,7 +457,7 @@
 
 						<h3 class="section-subtitle">View all my experience:</h3>
 						<a href="/static/Tyler-Kluszczynski-Resume.pdf" class="cta">
-							<i class="fas fa-download"></i>
+							<em class="fas fa-download"></em>
 							My Resume
 						</a>
 
@@ -389,7 +486,7 @@
 							</h3>
 
 							<div class="grid-paragraph">
-								Docker, ECS, Docker-compose. Kubernetes with EKS. Helm Charts. DC/OS.
+								Docker, ECS, Docker-compose, EKS, Helm, DC/OS.
 							</div>
 						</div>
 
@@ -399,7 +496,7 @@
 							</h3>
 
 							<div class="grid-paragraph skill-list">
-								Datadog. Prometheus with Node Exporter. Site24x7, Icinga. Appdynamics.
+								Datadog, Prometheus with Node Exporter, Site24x7, Icinga, Appdynamics.
 							</div>
 						</div>
 
@@ -429,7 +526,7 @@
 							</h3>
 
 							<div class="grid-paragraph">
-								GitLab CI, CircleCI, Jenkins, Buildmaster.
+								GitLab CI, CircleCI, Jenkins, Buildmaster, Bamboo.
 							</div>
 						</div>
 
@@ -439,7 +536,7 @@
 							</h3>
 
 							<div class="grid-paragraph skill-list">
-								Python, Bash, Groovy, Powershell.
+								Python, Bash, Groovy, Powershell, Shell.
 							</div>
 						</div>
 
@@ -510,10 +607,12 @@
 					<h2 class="contact-text">Contact Me</h2>
 
 					<div id="icon-set">
-						<a href="mailto:tylerkluszczynski@gmail.com"><i class="fas social-icon fa-envelope fa-2x"></i></a>
-						<a href="https://www.linkedin.com/in/tyler-kluszczynski/"><i class="fab social-icon fa-linkedin fa-2x"></i></a>
-						<a href="https://github.com/tklusz"><i class="fab social-icon fa-github fa-2x"></i></a>
-						<a href="https://gitlab.com/tklusz"><i class="fab social-icon fa-gitlab fa-2x"></i></a>
+						<a href="mailto:tylerkluszczynski@gmail.com"><em
+								class="fas social-icon fa-envelope fa-2x"></em></a>
+						<a href="https://www.linkedin.com/in/tyler-kluszczynski/"><em
+								class="fab social-icon fa-linkedin fa-2x"></em></a>
+						<a href="https://github.com/tklusz"><em class="fab social-icon fa-github fa-2x"></em></a>
+						<a href="https://gitlab.com/tklusz"><em class="fab social-icon fa-gitlab fa-2x"></em></a>
 					</div>
 
 				</div>
