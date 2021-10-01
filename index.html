@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Tyler Kluszczynski's Homepage</title>
+	<title>Tyler's Homepage</title>
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/small-screens.css">
@@ -14,8 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
 		integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-		crossorigin="anonymous">
-	</script>
+		crossorigin="anonymous"></script>
 
 	<meta name="description" content="Tyler Kluszczynski's website.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,8 +24,8 @@
 </head>
 
 <body>
-
 	<div class="whole-contents">
+		<!-- Navbar -->
 		<div class="top-bar">
 			<nav id="navbar" class="desktop-only">
 				<a class="navitem" href="#about">About</a>
@@ -37,17 +36,22 @@
 		</div>
 
 		<div class="main-section">
+			<!-- Circular picture -->
 			<img id="me" src="static/me.jpg" alt="Tyler Kluszczynski.">
+
+			<!-- Name -->
 			<h5>I'm</h5>
 			<div id="name">
 				<h1>Tyler</h1>
 				<h1 id="lastname">Kluszczynski</h1>
 			</div>
 
+			<!-- Title -->
 			<p class="sub-paragraph">
 				Senior DevOps Engineer at Aledade Inc.
 			</p>
 
+			<!-- CTA buttons -->
 			<span>
 				<a href="#skills" class="cta desktop-only double-button">
 					View my skills
@@ -57,21 +61,27 @@
 				</a>
 			</span>
 
+			<!-- About - Primary contents -->
 			<hr id="about">
 			<div>
 				<h2>About Me</h2>
+				<!-- Title (again) w/ start date -->
 				<div>
 					<h3 class="section-subtitle">
 						<em class="fa fa-briefcase"></em> Senior DevOps Engineer at Aledade Inc.
 					</h3>
+					<div class="about-list">
+						<p class="section-description section-line-1">May 2021 - Present
+					</div>
 				</div>
 
+				<!-- Education -->
 				<div>
 					<h3 class="section-subtitle">
 						<em class="fas fa-graduation-cap"></em>
-						B.S. in CIT at CSUN with&nbsp;Honors
+						B.S. in Computer&nbsp;Information Technology&nbsp;@ Cal&nbsp;State Northridge with&nbsp;Honors
 					</h3>
-					<div class="education-list">
+					<div class="about-list">
 						<p class="section-description section-line-1">GPA:
 							<span class="bold">3.72</span>.
 						</p>
@@ -84,16 +94,17 @@
 					</div>
 				</div>
 
+				<!-- Experience blurb -->
 				<div>
 					<h3 class="section-subtitle devops-subtitle">
 						<em class="fas fa-cloud"></em>
-						DevOps Experience
+						Summary of Experience
 					</h3>
 					<p class="about-paragraph big-paragraph section-description">
-						Experience with AWS infrastructure, containerization and container
-						orchestration, infrastructure as code, Python, PowerShell, Groovy
-						and Shell scripting, configuration management with Ansible, monitoring
-						and CI-CD.
+						Advanced knowledge of AWS infrastructure, Kubernetes in EKS and Docker,
+						infrastructure as code with Terraform and Terragrunt, scripting with Python,
+						CI-CD (most recent - Bamboo; in past: Jenkins, GitLab CI),
+						Ansible, monitoring (most recent - Datadog; in past: Site 24x7, Icinga), and shell scripting.
 					</p>
 					<a href="#skills" class="cta midline-cta">
 						View my DevOps skills
@@ -105,7 +116,29 @@
 			<div>
 				<h2> Work Experience </h2>
 
+				<!-- Experience blurb @ Aledade -->
 				<h3 class="section-subtitle">Aledade Inc.</h3>
+				<h3 class="section-subtitle">Reducing Toil</h3>
+				<div class="exp-grid">
+					<div class="exp-grid-description">
+						<p class="big-paragraph">
+							Refactored a large codebase that manages all of our databases. Increased transparency
+							compared to previous iteration of the script.
+							Reduced code footprint of our databases by 100,000 lines. Created new automation to
+							automatically sync user's Active Directory roles with
+							database roles. Integrates with Snowflake + Permifrost. Introduced and implemented
+							Terragrunt for database management.
+						</p>
+						<p class="big-paragraph">
+							Created a Python script that integrates with multiple vendor's APIs for automated user
+							removal when a user leaves the company.
+							Reduces toil of previous manual user management process (which took around an hour per user
+							to delete).
+						</p>
+					</div>
+				</div>
+
+				<!-- Experience blurb @ Aledade -->
 				<h3 class="section-subtitle">Static Code Analysis</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
@@ -113,16 +146,19 @@
 							Leading a project to host Sonarqube on AWS EKS.
 						</p>
 						<p class="big-paragraph">
-							Created parallel deployments in production and nonproduction EKS clusters. Created RDS Postgres databases connected to the cluster.
-							Terraform leveraged for infrastructure creation across all projects.
+							Created parallel deployments in production and nonproduction EKS clusters. Created RDS
+							Postgres databases connected to the cluster.
+							Leveraged Terraform for infrastructure creation across all projects.
 						</p>
 						<p class="big-paragraph">
 							Configured Bamboo and Bitbucket plugins to run static code analysis automatically when a
-							pull request is created, report the outcome onto the pull request in Bitbucket, and back in Sonarqube.
+							pull request is created, report the outcome onto the pull request in Bitbucket, and back in
+							Sonarqube.
 						</p>
 					</div>
 				</div>
 
+				<!-- Experience blurb @ Aledade -->
 				<h3 class="section-subtitle">Improving our Deployments</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
@@ -137,6 +173,7 @@
 					</div>
 				</div>
 
+				<!-- Experience blurb @ Aledade -->
 				<h3 class="section-subtitle">Pinpointing Spend</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
@@ -156,7 +193,7 @@
 					</div>
 				</div>
 
-
+				<!-- Experience blurb @ Aledade -->
 				<h3 class="section-subtitle">Modernizing our Codebase</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
@@ -170,6 +207,7 @@
 					</div>
 				</div>
 
+				<!-- Experience blurb @ Aledade -->
 				<h3 class="section-subtitle">Constantly Improving</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
@@ -185,6 +223,7 @@
 				</div>
 
 				<hr class="exp-hr">
+				<!-- Experience blurb @ PSI -->
 				<h3 class="section-subtitle">PSI Services LLC.</h3>
 				<h3 class="section-subtitle">Migrated local servers to AWS</h3>
 				<div class="exp-grid">
@@ -213,6 +252,8 @@
 						</p>
 					</div>
 				</div>
+
+				<!-- Experience blurb @ PSI -->
 				<h3 class="section-subtitle">Implemented Continuous Integration and Delivery</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
@@ -233,6 +274,8 @@
 						</p>
 					</div>
 				</div>
+
+				<!-- Experience blurb @ PSI -->
 				<h3 class="section-subtitle">Substantial improvements to Monitoring and Alerting</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
@@ -243,7 +286,8 @@
 							required custom Python and Nagios plugins, which I also created.
 						</p>
 						<p class="big-paragraph">
-							Migrated the monitoring solution away from Icinga, with no downtime required and no lapse of monitoring between solutions.
+							Migrated the monitoring solution away from Icinga, with no downtime required and no lapse of
+							monitoring between solutions.
 						</p>
 						<p class="big-paragraph">
 							Leveraged OpsGenie as a solution for alerting and on-call rotation. The OpsGenie
@@ -251,14 +295,14 @@
 							created.
 						</p>
 					</div>
-
 				</div>
+
 				<hr id="personal-work-separation">
 				<div>
 					<div>
-
 						<h2>Personal Projects</h2>
 
+						<!-- GitHub project -->
 						<h3 class="section-subtitle">Terraform AWS EKS deployment</h3>
 						<div class="exp-grid">
 							<div class="exp-grid-description">
@@ -276,6 +320,7 @@
 							<hr class="exp-hr">
 						</div>
 
+						<!-- GitHub project -->
 						<h3 class="section-subtitle">MetroLink Advisory Emailer</h3>
 						<div class="exp-grid">
 							<div class="exp-grid-description">
@@ -294,9 +339,9 @@
 							<hr class="exp-hr">
 						</div>
 
+						<!-- GitHub project -->
 						<h3 class="section-subtitle">Website deployment on AWS EKS</h3>
 						<div class="exp-grid">
-
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
 									I created a Kubernetes deployment for my website using AWS,
@@ -313,7 +358,6 @@
 									public IP address.
 								</p>
 							</div>
-
 							<div class="exp-grid-icon">
 								<a href="https://github.com/tklusz/kubernetes-deployment">
 									<em class="fab individual-icon fa-github fa-2x"></em>
@@ -323,10 +367,9 @@
 
 						<hr class="exp-hr">
 
+						<!-- Class Project -->
 						<h3 class="section-subtitle">DevOps Capstone Project</h3>
-
 						<div class="exp-grid">
-
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
 									I developed AWS infrastructure in an agile environment an
@@ -343,24 +386,19 @@
 									orchestration using ECS.
 								</p>
 							</div>
-
 							<div class="exp-grid-icon">
-
 								<span class="closed-source">
 									<em class="fab closed-source-icon individual-icon  fa-gitlab fa-2x"></em>
 									<span class="closed-tooltip">This project is closed source.</span>
 								</span>
-
 							</div>
-
 						</div>
 
 						<hr class="exp-hr">
 
+						<!-- Class Project -->
 						<h3 class="section-subtitle">DevOps Projects</h3>
-
 						<div class="exp-grid">
-
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
 									I worked with a group of peers to develop AWS infrastructure as
@@ -374,22 +412,18 @@
 									using Ansible.
 								</p>
 							</div>
-
 							<div class="exp-grid-icon">
-
 								<a href="https://github.com/CSUN-SeniorDesign/eat-infrastructure">
 									<em class="fab individual-icon fa-github fa-2x"></em>
 								</a>
-
 							</div>
 						</div>
 
 						<hr class="exp-hr">
 
+						<!-- Website Experience -->
 						<h3 class="section-subtitle">Web Development and Design</h3>
-
 						<div class="exp-grid">
-
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
 									I designed this website using Adobe XD.
@@ -411,29 +445,24 @@
 									pipeline using sshpass.
 								</p>
 							</div>
-
 							<div class="exp-grid-icon">
-
 								<div class="both-gits">
 									<a href="https://github.com/tklusz/WebsiteCode">
 										<em class="fab individual-icon fa-github fa-2x"></em>
 									</a>
 								</div>
-
 								<div class="both-gits">
 									<a href="https://gitlab.com/tklusz/tklusz.gitlab.io">
 										<em class="fab individual-icon fa-gitlab fa-2x"></em>
 									</a>
 								</div>
-
 							</div>
-
 						</div>
 
 						<hr class="exp-hr">
 
+						<!-- Class Projects -->
 						<h3 class="section-subtitle">DevOps + Linux Sysadmin Assignments</h3>
-
 						<div class="exp-grid">
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
@@ -450,11 +479,8 @@
 									<em class="fab individual-icon fa-github fa-2x"></em>
 								</a>
 							</div>
-
 						</div>
-
 						<hr class="exp-hr">
-
 						<h3 class="section-subtitle">View all my experience:</h3>
 						<a href="/static/Tyler-Kluszczynski-Resume.pdf" class="cta">
 							<em class="fas fa-download"></em>
@@ -462,15 +488,12 @@
 						</a>
 
 						<hr id="skills">
-
 					</div>
 
+					<!-- Skills -->
 					<h2>Skills</h2>
-
 					<h3 class="section-subtitle less-top">DevOps Skills</h3>
-
 					<div class="skill-grid">
-
 						<div>
 							<h3 class="bold grid-title">
 								AWS Services:
@@ -484,7 +507,6 @@
 							<h3 class="bold grid-title">
 								Containerization:
 							</h3>
-
 							<div class="grid-paragraph">
 								Docker, ECS, Docker-compose, EKS, Helm, DC/OS.
 							</div>
@@ -494,7 +516,6 @@
 							<h3 class=" bold grid-title">
 								Monitoring:
 							</h3>
-
 							<div class="grid-paragraph skill-list">
 								Datadog, Prometheus with Node Exporter, Site24x7, Icinga, Appdynamics.
 							</div>
@@ -504,7 +525,6 @@
 							<h3 class="bold grid-title">
 								Infrastructure as Code:
 							</h3>
-
 							<div class="grid-paragraph">
 								Terraform with modules.
 							</div>
@@ -514,7 +534,6 @@
 							<h3 class=" bold grid-title">
 								Configuration Management:
 							</h3>
-
 							<div class="grid-paragraph skill-list">
 								Ansible.
 							</div>
@@ -524,7 +543,6 @@
 							<h3 class="bold grid-title">
 								CI - CD Pipelines:
 							</h3>
-
 							<div class="grid-paragraph">
 								GitLab CI, CircleCI, Jenkins, Buildmaster, Bamboo.
 							</div>
@@ -534,7 +552,6 @@
 							<h3 class=" bold grid-title">
 								Scripting:
 							</h3>
-
 							<div class="grid-paragraph skill-list">
 								Python, Bash, Groovy, Powershell, Shell.
 							</div>
@@ -544,7 +561,6 @@
 							<h3 class="bold grid-title">
 								Databases:
 							</h3>
-
 							<div class="grid-paragraph">
 								MySQL, SQLite, Postgres.
 							</div>
@@ -554,7 +570,6 @@
 							<h3 class=" bold grid-title">
 								Source Control:
 							</h3>
-
 							<div class="grid-paragraph skill-list">
 								GitHub, GitLab, Bitbucket.
 							</div>
@@ -564,7 +579,6 @@
 							<h3 class=" bold grid-title">
 								Cloud Platforms:
 							</h3>
-
 							<div class="grid-paragraph skill-list">
 								AWS, DigitalOcean.
 							</div>
@@ -574,11 +588,8 @@
 
 
 					<hr class="exp-hr skills-hr">
-
 					<h3 class="section-subtitle less-top">Secondary Skills</h3>
-
 					<div class="skill-grid">
-
 						<div>
 							<h3 class=" bold grid-title">
 								Web Development:
@@ -588,7 +599,6 @@
 								HTML, CSS, Javascript.
 							</div>
 						</div>
-
 						<div>
 							<h3 class=" bold grid-title">
 								Web Design:
@@ -598,14 +608,11 @@
 								Adobe XD.
 							</div>
 						</div>
-
 					</div>
 
-
+					<!-- Contact section -->
 					<hr id="contact">
-
 					<h2 class="contact-text">Contact Me</h2>
-
 					<div id="icon-set">
 						<a href="mailto:tylerkluszczynski@gmail.com"><em
 								class="fas social-icon fa-envelope fa-2x"></em></a>
@@ -617,7 +624,6 @@
 
 				</div>
 			</div>
-
 </body>
 
 </html>
