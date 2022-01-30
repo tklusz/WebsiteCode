@@ -54,13 +54,13 @@
         opacity: 0.87;
     }
 
-    .closed-source-icon {
-        opacity: 0.38;
-      }
-
     .individual-icon {
         color: white;
         opacity: 0.87;
+    }
+
+    .closed-source-icon {
+        opacity: 0.38;
     }
 
     .grid-paragraph {
