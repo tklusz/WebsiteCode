@@ -1,0 +1,102 @@
+/*
+  Colors:
+  background - #121212
+  L1         - #1c1c1c
+  L2         - #212121
+  L3         - #232323
+  L4         - #272727
+
+  Text - #FFFFFF
+  Opacity - 87%; 60%; 38%
+  
+  Accent - #1CB5FD
+*/ 
+
+@media (prefers-color-scheme: dark) {
+    body,
+    html {
+        background: #121212;
+        color: #ffffff
+    }
+
+    hr {
+        color: #1CB5FD;
+        border-color: #1CB5FD;
+    }
+
+    h2 {
+        opacity: .87;
+    }
+
+    h3 {
+        opacity: .87;
+    }
+
+    h5 {
+        opacity: .60;
+    }
+
+    p {
+        opacity: .60;
+    }
+
+    .cta {
+        color: #121212;
+        background: #1CB5FD;
+    }
+
+    .exp-hr {
+        color: #1CB5FD;
+    }
+
+    .closed-tooltip {
+        background: #232323;
+        opacity: 0.87;
+    }
+
+    .closed-source-icon {
+        opacity: 0.38;
+      }
+
+    .individual-icon {
+        color: white;
+        opacity: 0.87;
+    }
+
+    .grid-paragraph {
+        opacity: .60
+    }
+
+    .social-icon {
+        color: white;
+    }
+
+    .navitem:hover {
+        text-decoration-color: #212121;
+    }
+
+    .main-section {
+        background: #1c1c1c;
+    }
+
+    .navitem {
+        color: #ffffff;
+        opacity: 0.87
+    }
+
+    .sub-paragraph {
+        opacity: 0.60;
+    }
+
+    .section-description {
+        opacity: .60;
+    }
+
+    #name {
+        opacity: 0.87;
+    }
+
+    #navbar {
+        background: #212121;
+    }
+}

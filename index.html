@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/large-screens.css">
 	<link rel="stylesheet" href="css/xl-screens.css">
 	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/dark-mode.css">
+
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
@@ -68,7 +70,7 @@
 				<!-- Title (again) w/ start date -->
 				<div>
 					<h3 class="section-subtitle">
-						<em class="fa fa-briefcase"></em> Senior DevOps Engineer at Aledade Inc.
+						Senior DevOps Engineer at Aledade Inc.
 					</h3>
 					<div class="about-list">
 						<p class="section-description section-line-1">May 2021 - Present
@@ -78,8 +80,7 @@
 				<!-- Education -->
 				<div>
 					<h3 class="section-subtitle">
-						<em class="fas fa-graduation-cap"></em>
-						B.S. in Computer&nbsp;Information Technology&nbsp;@ Cal&nbsp;State Northridge with&nbsp;Honors
+						B.S. in Computer&nbsp;Information Technology&nbsp;@ CSU&nbsp;Northridge, with Honors
 					</h3>
 					<div class="about-list">
 						<p class="section-description section-line-1">GPA:
@@ -93,23 +94,6 @@
 						</p>
 					</div>
 				</div>
-
-				<!-- Experience blurb -->
-				<div>
-					<h3 class="section-subtitle devops-subtitle">
-						<em class="fas fa-cloud"></em>
-						Summary of Experience
-					</h3>
-					<p class="about-paragraph big-paragraph section-description">
-						Advanced knowledge of AWS infrastructure, Kubernetes in EKS and Docker,
-						infrastructure as code with Terraform and Terragrunt, scripting with Python,
-						CI-CD (most recent - Bamboo; in past: Jenkins, GitLab CI),
-						Ansible, monitoring (most recent - Datadog; in past: Site 24x7, Icinga), and shell scripting.
-					</p>
-					<a href="#skills" class="cta midline-cta">
-						View my DevOps skills
-					</a>
-				</div>
 			</div>
 
 			<hr id="experience">
@@ -122,18 +106,15 @@
 				<div class="exp-grid">
 					<div class="exp-grid-description">
 						<p class="big-paragraph">
-							Refactored a large codebase that manages all of our databases. Increased transparency
-							compared to previous iteration of the script.
-							Reduced code footprint of our databases by 100,000 lines. Created new automation to
-							automatically sync user's Active Directory roles with
-							database roles. Integrates with Snowflake + Permifrost. Introduced and implemented
-							Terragrunt for database management.
+							Refactored a large portion of our code that handles postgres users, roles and servers. 
+							Reduced code footprint of our databases by 100,000 lines. 
+							Created new automation to automatically sync user's Active Directory roles with their database roles. 
+							This new automation integrates with Snowflake to apply role changes. 
+							Introduced and implemented Terragrunt for database management.
 						</p>
 						<p class="big-paragraph">
-							Created a Python script that integrates with multiple vendor's APIs for automated user
-							removal when a user leaves the company.
-							Reduces toil of previous manual user management process (which took around an hour per user
-							to delete).
+							Created a Python script that integrates with multiple vendor's APIs for automated user removal when a user leaves the company.
+							Reduces toil of previous manual user management process (which took around an hour per user to delete).
 						</p>
 					</div>
 				</div>
@@ -194,21 +175,7 @@
 				</div>
 
 				<!-- Experience blurb @ Aledade -->
-				<h3 class="section-subtitle">Modernizing our Codebase</h3>
-				<div class="exp-grid">
-					<div class="exp-grid-description">
-						<p class="big-paragraph">
-							Worked with another engineer to refactor a large internal Python CLI tool used for Postgres
-							database administration.
-						</p>
-						<p class="big-paragraph">
-							Wrote unit and functional tests for the new code using Pytest.
-						</p>
-					</div>
-				</div>
-
-				<!-- Experience blurb @ Aledade -->
-				<h3 class="section-subtitle">Constantly Improving</h3>
+				<h3 class="section-subtitle">Updating our Infrastructure</h3>
 				<div class="exp-grid">
 					<div class="exp-grid-description">
 						<p class="big-paragraph">
@@ -422,26 +389,28 @@
 						<hr class="exp-hr">
 
 						<!-- Website Experience -->
-						<h3 class="section-subtitle">Web Development and Design</h3>
+						<h3 class="section-subtitle">About this Site</h3>
 						<div class="exp-grid">
 							<div class="exp-grid-description">
 								<p class="big-paragraph">
-									I designed this website using Adobe XD.
-								</p>
-								<p class="big-paragraph">
-									After the website was designed, I developed it using HTML,
-									CSS, and Font-Awesome for icons. The website is hosted using
+									I developed this website using HTML,
+									CSS, and Font-Awesome. The website is hosted using
 									GitLab pages, with Cloudflare as a DNS provider and caching
 									solution. It also has a TLS origin certificate from Cloudflare.
 									The domain was purchased from NameCheap.
 								</p>
 								<p class="big-paragraph">
-									I also deployed this website on DigitalOcean. First, I created
+									I also continue to update the website regularly with my progress, and add new features,
+									including adding a dark-mode version that displays automatically based on your device preferences
+									, using CSS's new: <code>@media (prefers-color-scheme: dark)</code>.
+								</p>
+								<p class="big-paragraph">
+									I also deployed this website on DigitalOcean for testing. First, I created
 									a droplet with a floating IP. Then, I created a firewall to
 									allow for HTTP, HTTPS and SSH traffic. I also created a
-									multistage CI-CD pipeline with GitLab CI, utilizing the GitLab
+									multistage CI-CD pipeline with GitLab CI, utilized the GitLab
 									registry to store an intermediate container image. Finally,
-									the code gets deployed to DigitalOcean through the CI-CD
+									the code got deployed to DigitalOcean through the CI-CD
 									pipeline using sshpass.
 								</p>
 							</div>

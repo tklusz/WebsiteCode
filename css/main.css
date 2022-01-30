@@ -1,13 +1,12 @@
 body,
 html {
-  height: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background: #ffcc80; /* Old browsers */
+  background: #0277bd ; /* Old browsers */
   background: linear-gradient(
     180deg,
     #039be5 0%,
@@ -38,7 +37,7 @@ h2 {
 
 h3 {
   padding: 1.25em 0 0.35em 0;
-  font-size: 1.35sem;
+  font-size: 1.35em;
   font-weight: normal;
   margin: 0 auto;
 }
@@ -99,9 +98,8 @@ p {
 .cta {
   display: block;
 
-  font-weight: bold;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.05em;
 
   color: white;
   background: black;
